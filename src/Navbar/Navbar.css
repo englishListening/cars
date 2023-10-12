@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.bg-color{
+    background: linear-gradient(110deg, rgba(20, 227, 238, 0.461) 50%, rgba(238, 85, 20, 0) 0);
+    height: 850px;
+    animation: left 2s ;
+}
+a{
+    text-decoration: none;
+    color: black;  
+}
+header a{
+    text-decoration: none;
+    color: black;
+} 
+@keyframes left {
+    0%{
+        margin-left:-100rem
+    }
+    100%{
+        margin: 0;
+    }
+}
+@keyframes right {
+    0%{
+        margin-right:-100rem
+    }
+    100%{
+        margin-right:130px
+    }
+}
+@keyframes rightt {
+    0%{
+        margin-right:-100rem
+    }
+    100%{
+        margin-right:0px
+    }
+}
+.container{
+    width: 1500px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.logo{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Lobster', cursive;
+}
+header{
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+header .logo{
+    height: 44px;
+    width: 94px;
+    margin-right: 101px;
+}
+
+header .nav-links{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+header .nav-links ul{
+    display: flex;
+}
+header .nav-links ul li{
+    display: flex;
+    text-decoration: none;
+    margin: 0 20px;
+    align-items: center;
+    
+}
+
+header .nav-links a{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    color: #1A0A03;
+}
+
+header .nav-links a:hover{
+    color: #001eff;
+    transition: .5s;
+}
+li{
+    text-decoration: none;
+}
+/* 
+button{
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    background: rgba(20, 227, 238, 0.461);
+    color: #000000;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+button:hover{
+    color: white;
+    background-color: #EE5514;;
+    transition: 0.6s;
+}
+button:active{
+    transform: scale(0.9);
+} */
+.NavText{
+    display: flex;
+    justify-content: space-between;
+}
+.NavText h1{
+    font-size: 57px;
+    margin-top: 250px;
+    margin-left: 150px;
+    width: 500px;
+}
+.NavText img{
+    width: 50rem;
+    height: 25rem;
+    /* border: 1px solid black; */
+    margin-top: 150px;
+    margin-right: 130px;
+    animation: right 2s;
+}
+.search{
+    animation: rightt 2s;
+}
+.search input{
+    font-size: 17px;
+    margin-right: 25px;
+    padding: 8px 30px;
+    border-radius: 30px;
+    border: 1px solid rgba(20, 227, 238, 0.461);
+}
+
+nav{
+    width: 100%;
+    padding: 13px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #565656;
+}
