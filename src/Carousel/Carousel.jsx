@@ -54,4 +54,3 @@ const Def = () => {
   )
 }
 
-export default Def

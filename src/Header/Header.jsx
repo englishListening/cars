@@ -7,6 +7,7 @@ import Card from "../Card/Card";
 import Def from "../Carousel/Carousel";
 import Footer from "../Footer/Footer";
 import Result from "../Search/Results";
+import Results from "../components/Result";
 function Header() {
 // const [cars,setCars] = useState([])
 
@@ -23,7 +24,7 @@ function Header() {
           <a href="/"><b className="logo">UzMashina</b></a>
           <div>
           <div className="signup">
-                    <Result/>
+                    <Results/>
                     {/* <input type="text" placeholder="Enter something..."/> */}
                     <button>Sign Up</button>
                 
@@ -49,7 +50,6 @@ function Header() {
               <li><a href="">Yoqilg'i qismlari</a></li>
             </ul>
           </div>
-          <Def/>
           <Card/>
           <Footer/>
     </div>

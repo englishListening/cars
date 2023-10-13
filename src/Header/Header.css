@@ -47,13 +47,13 @@ button:active{
     height: 100%;
     z-index: 2;
 }
-.signup input{
+/* .signup input{
     font-size: 17px;
     margin-right: 25px;
     padding: 8px 30px;
     border-radius: 30px;
     border: 1px solid rgba(0, 0, 0, 0.461);
-}
+} */
 
 .logo{
     margin-left: 25px;

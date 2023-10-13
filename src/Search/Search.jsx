@@ -4,7 +4,7 @@ import axios from "axios";
 import Props from "./Props";
 import "./Search.css"
 import { json } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 export default function Search({setResults}){
    const [input , setInput] = useState("");
 
@@ -24,8 +24,8 @@ export default function Search({setResults}){
    }
    const X = (e) => {
     e.preventDefault()
-    setInput(e)
-    fetchData(e)
+    setInput("")
+    fetchData("")
 
    }
     // const Cars = cars.filter((item) => {
@@ -42,7 +42,7 @@ export default function Search({setResults}){
                 <input type="text" className="input" value={input} onChange={(e) => handleChange(e.target.value)}
                 placeholder="Search..."
                 />
-                <button onChange={(e) => handleChange(e.target.value = "")}>X</button>
+                <button onClick={X}>X</button>
             </form>
             
         </div>

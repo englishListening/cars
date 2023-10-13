@@ -8,6 +8,7 @@ import Header from './Header/Header';
 import Cars from './Cars/Cars';
 import Search from './Search/Search';
 import Result from './Search/Results';
+import Results from './components/Result';
 // import  Def  from './Carousel/Carousel';
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route element= {<Card/>} path="/card" /> 
         <Route element= {<Header/>} path="/" /> 
         <Route element= {<Cars/>} path="/cars" /> 
+        <Route element= {<Results/>} path="/re" /> 
       </Routes>
     </BrowserRouter>
     

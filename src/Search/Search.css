@@ -33,7 +33,7 @@
     font-size: 17px;
     padding: 8px 30px;
     border-radius: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.461);
+    /* border: 0px solid rgba(0, 0, 0, 0.461); */
 }
 .res{
     display: flex;
