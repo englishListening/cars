@@ -7,7 +7,7 @@ export const SearchBar = ({ setResults }) => {
   const [input, setInput] = useState("");
 
   const fetchData = (value) => {
-    fetch("https://guileless-licorice-6ebd82.netlify.app:8888")
+    fetch("https://guileless-licorice-6ebd82.netlify.app/")
       .then((response) => response.json())
       .then((json) => {
         const results = json.filter((user) => {
