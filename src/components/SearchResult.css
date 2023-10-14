@@ -1,6 +1,7 @@
 .search-result {
   width: 677px;
   padding: 10px 20px;
+  z-index: 5;
 }
 
 .search-result:hover {
