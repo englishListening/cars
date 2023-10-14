@@ -1,15 +1,21 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import { BsFillCartFill } from "react-icons/bs";
 export default function Product(props) {
   return (
     <div className="card">
-      <img className="product--image" src={props.url} alt="product image" />
-      <h2>{props.name}</h2>
+      <div className="chegara">
+      <img className="cardImage" src={props.url} alt="product image" />
+      <p className="cardName">{props.name}</p>
+      <p className="cardType">{props.type}</p>
+      <div className="narxlari">
       <p className="price">{props.price}</p>
-      <p className="desc">{props.type}</p>
-      <p>
-        <button>Buy</button>
-      </p>
+      <BsFillCartFill id="basket"/>
+      </div>
+      <button>Buy</button>
+      
+      </div>
+     
     </div>
   );
 }

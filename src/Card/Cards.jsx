@@ -5,9 +5,11 @@ import Product from "./Product";
 import { productData, responsive } from "./data.js";
 import { useState,useEffect } from "react";
 import axios from "axios";
-export default function Card() {
+export default function Cards() {
   const [balon,setBalon] = useState([])
   const [matiz,setMatiz] = useState([])
+  const [sparkakum,setSparkAkum] = useState([])
+  const [nexia,setNexia] = useState([])
   useEffect(() => {
       axios.get('https://guileless-licorice-6ebd82.netlify.app/')
       .then(balon => setBalon(balon.data))
@@ -18,18 +20,36 @@ export default function Card() {
     .then(matiz => setMatiz(matiz.data))
     .catch(err =>console.log(err))
 },[])
+useEffect(() => {
+    axios.get('https://guileless-licorice-6ebd82.netlify.app/spark')
+    .then(spark => setSparkAkum(spark.data))
+    .catch(err =>console.log(err))
+},[])
+useEffect(() => {
+    axios.get('https://guileless-licorice-6ebd82.netlify.app/nexia')
+    .then(spark => setMatiz(spark.data))
+    .catch(err =>console.log(err))
+},[])
 
 
-  const product = balon.slice(0,6).map((item) => (
+  const product = balon.map((item) => (
     <Product
       name={item.name}
       url={item.imageurl}
       price={item.price}
       type={item.type}
-      
+
     />
   ));
-  const matiza = matiz.slice(0,6).map((item) => (
+  const matiza = matiz.map((item) => (
+    <Product
+      name={item.name}
+      url={item.imageurl}
+      price={item.price}
+      type={item.type}
+    />
+  ))
+  const sparka = sparkakum.map((item) => (
     <Product
       name={item.name}
       url={item.imageurl}
@@ -39,16 +59,11 @@ export default function Card() {
   ))
   return (
     <div>
-    <div className="Card">
+    <div className="Cards">
      
-        {matiza}
+        {sparka}
     </div>
-    {/* <div className="Card">
-     <a className="as" href=""> <h1>Matiz Akumuluyatorlar {">>"}</h1></a>
-      <Carousel showDots={true} responsive={responsive}>
-        {matiza}
-      </Carousel>
-    </div> */}
+   
     </div>
   );
 }

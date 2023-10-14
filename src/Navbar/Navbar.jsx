@@ -1,42 +1,31 @@
 import React from "react"; 
 import './Navbar.css'
-import zap from "./zap.png"
-const Navbar = () =>{
-    
-   
-     return(
-        <div>
-            <div className="bg-color">
-                <header className="container">
-                    
-                    <a href="/"><b className="logo">UzMashina</b></a>
-            <div className="burger">
-                    
-            </div>
-            <div className="nav-links">
-                <ul>
-                   <li><a href="">Bamper</a></li> 
-                   <li><a href="">Balon</a></li> 
-                   <li><a href="">Do`konlar</a></li> 
-                   <li><a href="">Biz haqimizda</a></li> 
-                </ul>
-                <div className="search">
-                    
-                    <input type="text" placeholder="Enter something..."/>
-                    <button>Search</button>
-                    
-                
-                </div>
-            </div>
-                   
-                </header>
-                <div className="NavText"> 
-                    <h1>Kerakli mashina qismlarini faqat shu yerdan topasiz</h1>
-                    <img src={zap} alt="" />
-                </div>
-            </div>
-        </div>
-    )
+import Results from "../components/Result";
+import YZ from './YZ.png'
+function Navbar(props) {
+
+
+  return (
+    <div>
+        <div className="header">
+          <div className="navbar">
+          <img className="carlogo" src={YZ} alt="" />
+          <div className="contact">
+           <a href="/"><button className="buttona">Uyga</button></a> 
+            <a href="/katalog"><p>Katalog</p></a>
+            <a href="/saqlanganlar"><p>Saqlanganlar</p></a>
+            <a href={props.url}><p>Biz haqimizda</p></a>
+          </div>
+          <div className="log">
+          
+          <a href=""><p className="buttona"> Sign up</p></a>
+          </div>
+          </div>
+         <Results/>
+          </div>
+    </div>
+  );
 }
+
 
 export default Navbar

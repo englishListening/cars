@@ -1,8 +1,8 @@
 .Footer{
+    margin: 0 auto;
+
     margin-top: 4rem;
     max-width: 1480px;
-    margin: 0 auto;
-    background-color: #565656;
     padding: 4rem;
     display: flex;
     justify-content: space-around;
@@ -10,17 +10,41 @@
 .Footer a{
     text-decoration: none;
 }
+.Footer img{
+    width: 220.04px;
+    height: 87px;
+    top: 50px;
+    left: 240px;
+}
 .bg{
-    background-color: #565656;
+   
+
+    margin-top: 10rem;
+    background: rgba(245, 245, 245, 1);
 }
 .b b{
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'Courier New', Courier, monospace;
 }
 p{
     font-size: 24px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .of{
-    color: white;
+    font-size: 50px;
+    font-family: Gilroy;
+    color: rgba(75, 169, 255, 1);
+}
+.contacts{
+    display: flex;
+    align-items: center;
+}
+.contacts p{
+    color: rgba(75, 169, 255, 1);
+
+}
+#icons{
+    transform: scale(2);
+    margin-right: 30px;
+    color: rgba(75, 169, 255, 1);
 }

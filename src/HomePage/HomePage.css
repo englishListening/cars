@@ -1,0 +1,225 @@
+.shest{
+    width: 187.52px;
+    height: 217.52px;
+    position: absolute;
+    top: 246px;
+    left: 10px;
+   transform: rotateY('53.16 deg');
+    
+
+}
+li{
+    list-style: none;
+}
+.ehtiyot{
+    
+    display: flex;
+}
+.eng{
+    width: 921.55px;
+    height: 291px;
+    margin-top: 86px;
+    margin-left: 240px;
+    color: rgba(67, 66, 66, 1);
+    font-family: Gilroy;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 97px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 900px;
+}
+.eng p{
+    color: rgba(67, 66, 66, 1);
+    font-family: Gilroy;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 97px;
+    letter-spacing: 0em;
+}
+.ehtiyot span{
+    color: rgba(75, 169, 255, 1);
+}
+.ehtiyot button{
+    background: linear-gradient(180deg, #FF5454 0%, #CD4848 100%);
+    border: none;
+    font-size: 34px;
+    padding: 2rem 10rem;
+    color: white;
+}
+.ehtiyot img{
+    width: 595.5px;
+    height: 595.5px;
+    margin-top: 200px;
+    
+
+}
+.mahtash{
+    width: 100%;
+    height: 120.64px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.mahtash p{
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 470px;
+    height: 120.64px;
+    background-color: rgba(75, 169, 255, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    color: white;
+}
+.kompaniya{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.obj{
+    margin-left: 240px;
+    margin-top: 90px;
+}
+.kompaniya p{
+    font-size: 30px;
+}
+.kompaniya p span{
+    font-size: 39px;
+    color: aqua;
+}
+.kompaniya .kompaniyaText{
+    width: 600px;
+}
+.kompaniya img{
+    width: 856.72px;
+    height: 593.25px;
+    /* position: relative;
+    top: 340px;
+    right: 90px; */
+}
+.haqida{
+    width: 1000px;
+    margin-left: 240px;
+    position: relative;
+    top: 160px;
+}
+.haqida p{
+    font-family: Gilroy;
+    font-size: 40px;
+    position: relative; 
+    top: 235px;
+    left: 20px;
+}
+.haqida h2{
+    font-family: Gilroy;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 242px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(67, 66, 66, 0.1);
+
+}
+/* .img{
+    
+    display: flex;
+    position: absolute;
+    transform: rotateX('53.16 deg');
+    position: relative;
+    bottom: 700px;
+    left: 1300px;
+} */
+#img{
+    width: auto;
+    height: auto;
+    position: relative;
+    bottom: 200px;
+    left: 1400px;
+}
+.comp{
+    margin-top: -300px;
+}
+.katalog{
+    margin-top: -600px;
+}
+.shini{
+    margin-top: 150px;
+}
+.shini ul{
+    display: flex;
+    width: 1098px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.shini a{
+    color: black;
+    transition: .4s;
+}
+.shini a:hover{
+    background: rgba(75, 169, 255, 1);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.tip{
+    width: 345px;
+    height: 400px;
+    margin-left: 240px;
+    margin-top: 40px;
+    border: 1px solid rgba(67, 66, 66, 0.2)
+}
+.chose{
+    display: flex;
+}
+.tip p{
+    font-family: Gilroy;
+font-size: 24px;
+font-weight: 600;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+margin-left: 40px;
+}
+.chooseBrend{
+    width: 265.31px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid rgba(67, 66, 66, 0.2);
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 40px;
+
+
+}
+select{
+    background-color: white;
+}
+.choosebutton{
+    margin-left: 40px;
+    margin-top: 40px;
+    color: white;
+    font-size: 24px;
+    font-family: Gilroy;
+    border: none;
+    padding: 1rem 5rem;
+    border-radius: 5px;
+    background-color: rgba(75, 169, 255, 1);
+}
+.choosebutton:active{
+    transform: scale(0.95);
+}
