@@ -15,7 +15,7 @@ function HomePage() {
 
   return (
     <div>
-        <div className="header">
+        <div className="headers">
             <Navbar url = "#haqida"/>
             <img className="shest" src={shest} alt="" />
             <div className="ehtiyot">
@@ -55,9 +55,12 @@ function HomePage() {
           </p>
           </div>
           </div>
+          <div className="manDiv">
           <img src={man} alt="" />
-        </div>
           <img id="img" src={klyuch} alt="" />
+          </div>
+          
+        </div>
           </div>
           <div className="katalog">
           <div className="haqida">
@@ -98,7 +101,7 @@ function HomePage() {
               </select>
               <button className="choosebutton">Qidirish</button>
           </div>
-          <div>
+          <div className="fcard">
             <Card/>
           </div>
           </div>

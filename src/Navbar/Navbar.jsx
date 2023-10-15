@@ -21,8 +21,8 @@ function Navbar(props) {
           <a href=""><p className="buttona"> Sign up</p></a>
           </div>
           </div>
-         <Results/>
           </div>
+         <Results/>
     </div>
   );
 }

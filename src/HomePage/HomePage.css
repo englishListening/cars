@@ -14,6 +14,7 @@ li{
 .ehtiyot{
     
     display: flex;
+    justify-content: space-between;
 }
 .eng{
     width: 921.55px;
@@ -139,15 +140,23 @@ li{
 #img{
     width: auto;
     height: auto;
-    position: relative;
-    bottom: 200px;
-    left: 1400px;
+    position: absolute;
+    /* top:  100px; */
+    /* margin-left: 140PX; */
+    /* left: 1400px; */
+    margin-top: 400px;
+    display: flex;
+    /* justify-content: ; */
+}
+.manDiv{
+    display: flex;
+    justify-content: right;
 }
 .comp{
     margin-top: -300px;
 }
 .katalog{
-    margin-top: -600px;
+    margin-top: -300px;
 }
 .shini{
     margin-top: 150px;
@@ -181,6 +190,7 @@ li{
 }
 .chose{
     display: flex;
+    justify-content: space-between;
 }
 .tip p{
     font-family: Gilroy;
@@ -222,4 +232,7 @@ select{
 }
 .choosebutton:active{
     transform: scale(0.95);
+}
+.fcard{
+    margin-right: 100px;
 }
