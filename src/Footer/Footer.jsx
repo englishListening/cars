@@ -8,12 +8,12 @@ const Footer = () => {
     return(
         <div className="bg">
             <div className="Footer">
-                <div>
+                <div >
                      <a href="/"><img src={YZ} alt="" /></a>
                      <p>2023 Y&Z</p>
                      <p>Ommaviy Taklif</p>
                 </div>
-                <div className="b">
+                <div className="s">
                      <h1>Brendlar</h1>
                      <p>Chevrolet</p>
                      <p>Best</p>
@@ -23,7 +23,7 @@ const Footer = () => {
                      <p>BYD</p>
                      <p>Cherry</p>
                 </div>
-                <div className="b">
+                <div className="s">
                     <h1>Bog`lanish uchun</h1>
                      <p>Black Clover Jamoasi</p>
                      <div className="contacts">

@@ -1,33 +1,52 @@
-import logo from './logo.svg';
 import './App.css';
-// import Navbar from './Navbar/Navbar';
-import Card from './Card/Card';
+import { useState,useEffect } from 'react';
 import { BrowserRouter,Routes  } from 'react-router-dom';
 import { Route } from 'react-router-dom';
-import Cars from './Cars/Cars';
-import Search from './Search/Search';
-import Result from './Search/Results';
-import Results from './components/Result';
-import Katalog from './Katalog/Katalog';
-import HomePage from './HomePage/HomePage';
 import Saqlanganlar from './Saqlanganlar/Saqlanganlar';
-import Balonlar from './Parts/Balonlar';
-import Akumuluyatorlar from './Parts/Akumulyator';
-import Faralar from './Parts/Fara';
-import Bamperlar from './Parts/Bamper';
+import Home from './Home/Home';
+import Katalogs from './Katalog/Katalogs';
+import Gear from './Animations/Gear';
+import Car from './Animations/Car';
+import CardPage from './CardPage/CardPage';
+import axios from 'axios';
 // import  Def  from './Carousel/Carousel';
 function App() {
+  const [show, setShow] = useState(true);
+  const [cart, setCart] = useState([]);
+  const arr = [ ]
+  const handleClick = (item) => {
+    if (cart.indexOf(item) !== -1) return;
+    setCart([...cart, item]);
+    // cart.push(item)
+  };
+
+  const [balon,setBalon] = useState([])
+  useEffect(() => {
+    axios.get(`https://guileless-licorice-6ebd82.netlify.app/`)
+    .then(balon => setBalon(balon.data))
+    .catch(err =>console.log(err))
+},[])
+  const sor = 
+    {
+      _id:1,
+      name:"Matiz",
+      type:"Chevrolet",
+      price:"320",
+    }
+  
+
   return (
     
       <BrowserRouter>
+        {/* <Navbar setShow={setShow} size={cart.length} />
+        <Cart cart={cart} setCart={setCart}/> */}
         <Routes>
-           <Route element= {<Balonlar/>} path="/balonlar" /> 
-           <Route element= {<Akumuluyatorlar/>} path="/akumulyatorlar" /> 
-           <Route element= {<Faralar/>} path="/faralar" /> 
-           <Route element= {<Bamperlar/>} path="/bamperlar" /> 
-            <Route element= {<HomePage/>} path="/" /> 
-            <Route element= {<Katalog/>} path="/katalog" /> 
+            
+            <Route element= {<Home/>} path="/" /> 
+            <Route element= {<Katalogs />} path="/katalog" /> 
             <Route element= {<Saqlanganlar/>} path="/saqlanganlar" /> 
+            <Route element= {<CardPage props={sor}/>} path={"page"}/> 
+
       </Routes>
     </BrowserRouter>
     

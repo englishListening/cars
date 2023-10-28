@@ -38,6 +38,10 @@
     text-decoration: none;
 
 }
+.contact p:hover{
+    transition: .2s;
+    color: rgb(27, 91, 255);
+}
 .buttona{
     
     padding: 1rem;
@@ -53,4 +57,28 @@
         letter-spacing: 0em;
         text-align: left;
 
+}
+#FillCart{
+    transform: scale(1.4);
+    color: rgba(75, 169, 255, 1);
+    cursor: pointer;
+}
+.return{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: -10px;
+    margin-left: 5px;
+    color: white;
+}
+.return:active{
+    transform: scale(1.1);
+}
+.saver{
+    display: flex;
 }

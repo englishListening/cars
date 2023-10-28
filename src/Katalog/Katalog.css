@@ -1,0 +1,16 @@
+.katalogtips{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.katalogtips p{
+    color: rgba(75, 169, 255, 1);
+    font-family: Gilroy;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+}
+.katalogtips select{
+    text-align: center;
+}

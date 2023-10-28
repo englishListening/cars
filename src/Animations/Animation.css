@@ -1,0 +1,151 @@
+.body{
+  /* background:#ffffff; */
+  display:flex;
+  justify-content:center;
+  margin-top:100px;
+  gap:20px;
+} 
+.gear > * {
+  position:absolute;
+}
+
+.bold{
+  height:50px;
+  aspect-ratio:1/1;
+  background:#F1C93B;
+  border-radius:50%;
+  z-index:9;
+  box-shadow: 0 0 0 10px #4A55A2,
+              0 0 0 15px #7895CB;
+}
+.gear-1 .bold {
+    box-shadow: 0 0 0 10px #7895CB,
+                0 0 0 15px #4A55A2;
+}
+
+.nut{
+  height:29px;width:17px;
+  background:#3F2305;
+  z-index:10;
+}
+.nut-2{
+  rotate:120deg;
+}
+.nut-3{
+  rotate:-120deg;
+}
+
+
+.gear{
+  height:200px;
+  aspect-ratio:1/1;
+  background:#9d9d97;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  position:relative;
+  animation: rotation 20s linear infinite;
+}
+
+.gear-1{
+  margin-top:140px;
+  margin-right:-52px;
+  background:#bdbfbb;
+  scale:.8;
+}
+.gear-1 > .line{
+    height:265px;
+}
+
+.gear-2{
+  rotate:10deg;
+  animation: rotation 20000ms linear infinite reverse ;
+}
+
+.line{
+  position:absolute;
+  height:250px;
+  width:20px;
+  border-radius:10px;
+  background:#9d9d97;
+}
+.gear-1 > .line{
+    background:#bdbfbb;
+}
+
+.line::after,
+.line::before{
+  content:'';
+  background:#ffffff;
+  position:absolute;
+  height:15px;
+  width:15px;
+  border-radius:50%;
+}
+.gear-1 .line::before{
+  top:10%;
+    left:-76%;
+}
+.gear-1 .line::after{
+  bottom:10%;
+    right:-76%;
+}
+
+.line::before{
+  top:7%;
+  left:-75%;
+}
+.line::after{
+  bottom:7%;
+  right:-75%;
+}
+
+.a{rotate:20deg; }
+.b{rotate:40deg; }
+.c{rotate:60deg; }
+.d{rotate:80deg; }
+.e{rotate:100deg;}
+.f{rotate:120deg;}
+.g{rotate:140deg;}
+.h{rotate:160deg;}
+.i{rotate:135deg;}
+.j{rotate:150deg;}
+.k{rotate:165deg;}
+.i{rotate:180deg;}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(1080deg);
+    }
+}
+
+.gear-3 {
+  margin:245px 0 0 -265px;
+  scale:.45;
+  rotate:22deg;
+    animation: rotation 11120ms linear infinite reverse ;
+    background:#164B60;
+}
+.gear-3 .line{
+  height:310px;
+  width:35px;
+  border-radius:12px;
+  background:#164B60;
+}
+.gear-3 .a{rotate:36deg; }
+.gear-3 .b{rotate:72deg; }
+.gear-3 .c{rotate:108deg; }
+.gear-3 .d{rotate:144deg;}
+.gear-3 .e{rotate:180deg;}
+
+.gear-3 .line::after,
+.gear-3 .line::before{
+  content:'';
+  background:none;
+}
+
+
+

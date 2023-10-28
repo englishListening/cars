@@ -5,7 +5,7 @@ import Product from "./Product";
 import { productData, responsive } from "./data.js";
 import { useState,useEffect } from "react";
 import axios from "axios";
-export default function Cards() {
+export default function Cards({handleClick}) {
   const [balon,setBalon] = useState([])
   const [matiz,setMatiz] = useState([])
   const [sparkakum,setSparkAkum] = useState([])
@@ -38,7 +38,6 @@ useEffect(() => {
       url={item.imageurl}
       price={item.price}
       type={item.type}
-
     />
   ));
   const matiza = matiz.map((item) => (
@@ -61,7 +60,9 @@ useEffect(() => {
     <div>
     <div className="Cards">
      
-        {sparka}
+    {matiz.map((item) => (
+          <Product key={item.id} props={item} handleClick={handleClick}/>
+        ))}
     </div>
    
     </div>

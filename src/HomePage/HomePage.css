@@ -1,8 +1,8 @@
 .shest{
-    width: 187.52px;
-    height: 217.52px;
+    /* width: 187.52px;
+    height: 217.52px; */
     position: absolute;
-    top: 246px;
+    top: 46px;
     left: 10px;
    transform: rotateY('53.16 deg');
     
@@ -29,9 +29,11 @@ li{
     letter-spacing: 0em;
     text-align: left;
     width: 900px;
+    z-index:-1 ;
+
 }
 .eng p{
-    color: rgba(67, 66, 66, 1);
+    color: rgb(64, 0, 128);
     font-family: Gilroy;
     font-size: 80px;
     font-weight: 700;
@@ -48,12 +50,19 @@ li{
     padding: 2rem 10rem;
     color: white;
 }
-.ehtiyot img{
-    width: 595.5px;
-    height: 595.5px;
-    margin-top: 200px;
-    
+.ehimg{
+    width: 795.5px;
+    height: 695.5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 
+}
+.cobalt{
+    width: 400px;
+    height: 280px;
+    border-radius: 40px;
+    position: absolute;
+    right: 400px;
 }
 .mahtash{
     width: 100%;
@@ -86,7 +95,7 @@ li{
 }
 .obj{
     margin-left: 240px;
-    margin-top: 90px;
+    margin-top: 100px;
 }
 .kompaniya p{
     font-size: 30px;
@@ -109,13 +118,13 @@ li{
     width: 1000px;
     margin-left: 240px;
     position: relative;
-    top: 160px;
+    top: 80px;
 }
 .haqida p{
     font-family: Gilroy;
     font-size: 40px;
     position: relative; 
-    top: 235px;
+    top: 155px;
     left: 20px;
 }
 .haqida h2{
@@ -125,18 +134,10 @@ li{
     line-height: 242px;
     letter-spacing: 0em;
     text-align: left;
-    color: rgba(67, 66, 66, 0.1);
+    color: rgba(55, 0, 121, 0.1);
 
 }
-/* .img{
-    
-    display: flex;
-    position: absolute;
-    transform: rotateX('53.16 deg');
-    position: relative;
-    bottom: 700px;
-    left: 1300px;
-} */
+
 #img{
     width: auto;
     height: auto;
@@ -153,13 +154,13 @@ li{
     justify-content: right;
 }
 .comp{
-    margin-top: -300px;
+    margin-top: -100px;
 }
 .katalog{
-    margin-top: -300px;
+    margin-top: -100px;
 }
 .shini{
-    margin-top: 150px;
+    margin-top: 80px;
 }
 .shini ul{
     display: flex;
@@ -169,16 +170,14 @@ li{
     justify-content: space-between;
     margin: 0 auto;
 }
-.shini a{
+.shini .category{
     color: black;
     transition: .4s;
-}
-.shini a:hover{
     background: rgba(75, 169, 255, 1);
     padding: 1rem 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+.shini .category:active{
+    transform: scale(1.1);
     
 }
 .tip{

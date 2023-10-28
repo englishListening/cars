@@ -1,6 +1,6 @@
 .Footer{
     margin: 0 auto;
-
+    
     margin-top: 4rem;
     max-width: 1480px;
     padding: 4rem;
@@ -22,7 +22,7 @@
     margin-top: 10rem;
     background: rgba(245, 245, 245, 1);
 }
-.b b{
+.s b{
     color: rgb(0, 0, 0);
     font-family: 'Courier New', Courier, monospace;
 }
@@ -48,3 +48,6 @@ p{
     margin-right: 30px;
     color: rgba(75, 169, 255, 1);
 }
+
+
+

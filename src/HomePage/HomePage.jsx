@@ -1,30 +1,93 @@
 import React from "react"; 
-// import { useState } from 'react';
 import './HomePage.css'
-import shest from './shest.png'
-import Results from "../components/Result";
-import Navbar from "../Navbar/Navbar";
-import shina from "./Shina.png"
 import Footer from "../Footer/Footer";
 import man from "./odam.png"
 import klyuch from './klyuch.png'
-import { Link } from "react-router-dom";
+import axios from "axios";
+import { useState,useEffect } from "react";
 import Card from "../Card/Card";
-function HomePage() {
+import Gear from "../Animations/Gear";
+function HomePage({handleClick}) {
+      const [options,setOptions] = useState()
+      const [matiz,setMatiz] = useState([])
+      
+      const sparkurl = [
+        {
+          id:1,
+          type:"Spark Akumulyator",
+          name:"Akumulyator"
+        },
+        {
+          id:2,
+          type:"Spark Bamper ",
+          name:"Bamperlar"
+        },
+        {
+          id:3,
+          type:"Spark Balon ",
+          name:"Balon"
+        },
+        {
+          id:4,
+          type:"Spark fara",
+          name:"Fara"
+        }
+      ]
+     const matizurl = [
+      {
+        id:1,
+        type:"Matiz Akumulyator",
+        name:"Akumulyator"
+      },
+      {
+        id:2,
+        type:"Matiz Bamper",
+        name:"Bamperlar"
+      },
+      {
+        id:3,
+        type:"Matiz Fara",
+        name:"Fara"
+      }
+     ]
+     const nexiaurl = [
+      {
+        id:1,
+        type:"Nexia Akumulyator",
+        name:"Akumulyator"
+      }
+     ]
+      useEffect(() => {
+        axios.get(`https://guileless-licorice-6ebd82.netlify.app/`)
+        .then(balon => setMatiz(balon.data))
+        .catch(err =>console.log(err))
+    },[])
+    const [data,setData] = useState(matiz)
 
-
+    function chooseCategory(type) {
+      if (type === "Barchasi") {
+        setData(matiz)
+      } else {
+        setData(matiz.filter((el) => el.type === type))
+      }
+    }
+    
+    
   return (
     <div>
         <div className="headers">
-            <Navbar url = "#haqida"/>
-            <img className="shest" src={shest} alt="" />
+            <div className="shest">
+            <Gear/>
+
+            </div>
             <div className="ehtiyot">
               <div className="eng">
               <p>Eng sifatli avtomobil <span>ehtiyot qismlari</span> faqat bizda!</p>
               <button>Mahsulotlar</button>
               </div>
               <div>
-                <img src={shina} alt="" />
+                {/* <img className="cobalt"  src="https://s.auto.drom.ru/img5/catalog/photos/fullsize/ravon/gentra/ravon_gentra_294955.jpg" alt="" /> */}
+                <img className="ehimg" src="https://static.wixstatic.com/media/bf4bd5_fea4c6d5e24b44c8a413b1a7c8592002~mv2.gif" alt="" />
               </div>
             </div>
             <div className="mahtash">
@@ -68,41 +131,50 @@ function HomePage() {
           <h2>Katalog</h2>
           </div>
           
-          <div className="shini">
+          {/* <div className="shini">
               <ul>
-                <li><a href="">Balonlar</a></li>
-                <li><a href="">Akumulyator</a></li>
-                <li><a href="">Bamperlar</a></li>
-                <li><a href="">Faralar</a></li>
-                <li><a href="">Oynalar</a></li>
-                <li><a href="">Moy</a></li>
-                <li><a href="">Aksesuarlar</a></li>
+                {carurl.map((item) => (
+                  <div className="category" onClick={() => chooseCategory(item.type)}>{item.name}</div>
+                  // <div className="category">{item.name}</div>
+
+                ))}
+                
+                
                 
               </ul>
-          </div>
+          </div> */}
           <div className="chose">
           <div className="tip">
 
-              <p>Brend</p>
-              <select className="chooseBrend" name="brend" id="">
-                <option value="chevrolet">Chevrolet</option>
-                <option value="GM">GM</option>
-                <option value="BYD">BYD</option>
-                <option value="Cherry">Cherry</option>
+              
+              <p>Spark</p>
+              <select className="chooseBrend" name="brend" onChange={(e) => setOptions(e.target.value)}>
+                {
+                  sparkurl.map((item) => (
+                  <option key={item.id} onClick={() => chooseCategory(item.type)} value={item.name}>{item.name}</option>
+                  ))
+                }
               </select>
-              <p>Avtomobil</p>
-              <select className="chooseBrend" name="brend" id="">
-                <option value="Matiz">Matiz Akumulyator</option>
-                <option value="Spark">Spark</option>
-                <option value="Nexia">Nexia</option>
-                <option value="Cobalt">Cobalt</option>
-                <option value="Capticva">Capticva</option>
-                <option value="Gentra">Gentra</option>
+              <p>Matiz</p>
+              <select className="chooseBrend" name="brend" onChange={(e) => setOptions(e.target.value)}>
+                {
+                  matizurl.map((item) => (
+                  <option key={item.id} onClick={() => chooseCategory(item.type)} value={item.name}>{item.name}</option>
+                  ))
+                }
               </select>
-              <button className="choosebutton">Qidirish</button>
+              <p>Nexia</p>
+              <select className="chooseBrend" name="brend" onChange={(e) => setOptions(e.target.value)}>
+                {
+                  nexiaurl.map((item) => (
+                  <option key={item.id} onClick={() => chooseCategory(item.type)} value={item.name}>{item.name}</option>
+                  ))
+                }
+              </select>
           </div>
           <div className="fcard">
-            <Card/>
+            <Card props={data} handleClick={handleClick} />
+            {/* <Card items={data} handleClick={handleClick} /> */}
           </div>
           </div>
           </div>
