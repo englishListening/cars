@@ -9,6 +9,7 @@ import Gear from './Animations/Gear';
 import Car from './Animations/Car';
 import CardPage from './CardPage/CardPage';
 import axios from 'axios';
+import SignUp from './Authentication/SignUp';
 // import  Def  from './Carousel/Carousel';
 function App() {
   const [show, setShow] = useState(true);
