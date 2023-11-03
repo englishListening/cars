@@ -17,6 +17,7 @@ function Navbar({ setShow, size },props) {
            <Link to="/"><p>Uyga</p></Link> 
             <Link to="/katalog"><p>Katalog</p></Link>
             <a href="#haqida"><p>Biz haqimizda</p></a>
+          <Link to="/signup"><p>Registratsiya</p></Link>
           </div>
           <div className="log">
           <div className="saver"> 

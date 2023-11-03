@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./Result.css";
 import { SearchBar } from "./SearchBar";
 import { SearchResultsList } from "./SearchResultsList";
+import { Link } from "react-router-dom";
 
 function Results() {
   const [results, setResults] = useState([]);

@@ -27,12 +27,14 @@ width: 325px;
 height: 493.01px;
 margin-left: 40px;
 margin-top: 40px;
+border-radius: 10px;
+
 border: 1px solid rgba(166, 166, 166, 1)
 }
 .cardImage{
 width: 248.5px;
 height: 248.5px;
-
+border-radius: 10px;
 
 }
 .chegara{

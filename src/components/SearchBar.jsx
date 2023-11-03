@@ -32,6 +32,7 @@ export const SearchBar = ({ setResults }) => {
       <FaSearch id="search-icon" />
       
       <input
+        className="input"
         placeholder="Izlash"
         value={input}
         onChange={(e) => handleChange(e.target.value)}

@@ -29,28 +29,10 @@ export default function Card({props,handleClick}) {
     .then(balon => setBalon(balon.data))
     .catch(err =>console.log(err))
 },[])
-  // const product = balon.slice(0,6).map((item) => (
-  //   <Product
-  //     name={item.name}
-  //     url={item.imageurl}
-  //     priccare={item.price}
-  //     type={item.type}
-      
-  //   />
-  // ));
-//  const Matiz = data.map((item) => (
-// <Product key={item.id} props={item} handleClick={handleClick}/>))
-// const Balon = balon.map((item) => (
-//   <Product key={item.id} props={item} handleClick={handleClick}/> ))
   return (
     <div>
     <div className="Card">
-        {/* {
-            props.items.map((item) => (
-              <Product key={item.id} item={item} handleClick={handleClick}/> 
-              ))
-            
-        } */}
+      
          {items.map((item) => (
         <Product key={item._id} item={item} hands={handleClick} />
       ))}

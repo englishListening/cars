@@ -1,13 +1,16 @@
 import "./SearchResult.css";
-
-export const SearchResult = ({ result , type}) => {
+import { Link } from "react-router-dom";
+export const SearchResult = ({ result , type , id}) => {
   return (
     <div
       className="search-result"
       
     >
-      {result} <br />
-      {type}
+      <Link to={`/katalog/${id}`}>
+      <p>{result}</p> 
+      <p>{type}</p>
+      </Link>
+      
     </div>
   );
 };

@@ -2,8 +2,15 @@
   width: 677px;
   padding: 10px 20px;
   z-index: 5;
+  color: black;
 }
+.search-result p{
+  font-size: 15px;
 
+}
 .search-result:hover {
   background-color: #efefef;
+}
+Link{
+  color: black;
 }

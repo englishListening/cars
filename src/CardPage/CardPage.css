@@ -1,6 +1,51 @@
-.CardPages{
+.Container{
     display: flex;
     justify-content: center;
-    width: 1400px;
     
+    
+}
+.ContainerDiv1{
+    margin-right: 300px;
+}
+.ContainerDiv1 img{
+    width: 500px;
+    /* border: 1px solid black; */
+    border-radius: 13px;
+    margin-top: 100px;
+}
+.ContainerDiv1 h2{
+    font-size: 60px;
+    color: rgba(75, 169, 255, 1);
+    position: absolute;
+}
+.ContainerDiv2{
+    margin-top: 85px;
+}
+.ContainerDiv2 b{
+    font-size: 44px;
+}
+.ContainerPrice{
+    font-size: 30px;
+    padding: 10px;
+    background-color: rgb(120, 255, 120);
+    border-radius: 13px;
+}
+.ContainerType{
+    font-size: 25px;
+    padding: 10px;
+}
+#bassket{
+    transform: scale(3);
+    color: rgba(75, 169, 255, 1);
+    width: 24.17px;
+    height: 17.58px;
+    cursor: pointer;
+    margin-top: 80px;
+}
+.addContainer{
+    display: flex;
+    justify-content: center;
+}
+.addContainer:active{
+    transform: scale(1.1);
 }

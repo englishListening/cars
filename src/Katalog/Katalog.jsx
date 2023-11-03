@@ -108,7 +108,6 @@ function chooseCategory(type) {
 </div>
               <Card props={data} handleClick={handleClick}/>
           </div>
-          <Footer/>
         </div>
     )
 }

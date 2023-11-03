@@ -33,7 +33,7 @@ li{
 
 }
 .eng p{
-    color: rgb(64, 0, 128);
+    color: rgba(78, 77, 77, 0.68);
     font-family: Gilroy;
     font-size: 80px;
     font-weight: 700;
@@ -46,6 +46,7 @@ li{
 .ehtiyot button{
     background: linear-gradient(180deg, #FF5454 0%, #CD4848 100%);
     border: none;
+    border-radius: 30px;
     font-size: 34px;
     padding: 2rem 10rem;
     color: white;
@@ -84,6 +85,7 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 15px;
     margin-right: 8px;
     color: white;
 }
@@ -200,6 +202,9 @@ letter-spacing: 0em;
 text-align: left;
 margin-left: 40px;
 }
+.firstChildTip{
+    margin-top: 50px;
+}
 .chooseBrend{
     width: 265.31px;
     height: 50px;
@@ -234,4 +239,41 @@ select{
 }
 .fcard{
     margin-right: 100px;
+}
+@media screen and (max-width: 1680px) {
+    .eng{
+        margin-left: 110px;
+    }
+    .obj{
+        margin-left: 110px;
+    }
+    .haqida{
+        margin-left: 110px;
+    }
+    .tip{
+        margin-left: 110px;
+    }
+   
+   
+    
+}
+@media screen and (max-width: 1560px) {
+    .shest{
+        display: none;
+    }
+    .eng{
+        margin-left: 50px;
+    }
+    .obj{
+        margin-left: 50px;
+    }
+    .haqida{
+        margin-left: 50px;
+    }
+    .tip{
+        margin-left: 50px;
+    }
+   
+   
+    
 }

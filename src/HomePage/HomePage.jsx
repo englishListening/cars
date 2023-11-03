@@ -4,6 +4,7 @@ import Footer from "../Footer/Footer";
 import man from "./odam.png"
 import klyuch from './klyuch.png'
 import axios from "axios";
+import { Link } from "react-router-dom";
 import { useState,useEffect } from "react";
 import Card from "../Card/Card";
 import Gear from "../Animations/Gear";
@@ -83,7 +84,7 @@ function HomePage({handleClick}) {
             <div className="ehtiyot">
               <div className="eng">
               <p>Eng sifatli avtomobil <span>ehtiyot qismlari</span> faqat bizda!</p>
-              <button>Mahsulotlar</button>
+              {/* // <button>Mahsulotlar</button> */}
               </div>
               <div>
                 {/* <img className="cobalt"  src="https://s.auto.drom.ru/img5/catalog/photos/fullsize/ravon/gentra/ravon_gentra_294955.jpg" alt="" /> */}
@@ -112,10 +113,9 @@ function HomePage({handleClick}) {
             , Cherry , Lada kabi avtomobillari brendlarini topishingiz mumkin.
             Hamyonbob , yangi va sifatli avtomobil ehtiyot qismlari faqat bizda.
             <br /><br />
-            Katta tanlov!
-
-          
+            Katta tanlov!          
           </p>
+          {/* <Link>jfvn</Link> */}
           </div>
           </div>
           <div className="manDiv">
@@ -147,7 +147,7 @@ function HomePage({handleClick}) {
           <div className="tip">
 
               
-              <p>Spark</p>
+              <p className="firstChildTip">Spark</p>
               <select className="chooseBrend" name="brend" onChange={(e) => setOptions(e.target.value)}>
                 {
                   sparkurl.map((item) => (
@@ -178,7 +178,6 @@ function HomePage({handleClick}) {
           </div>
           </div>
           </div>
-            <Footer/>
           
     </div>
   );
