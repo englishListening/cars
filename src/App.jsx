@@ -3,11 +3,6 @@ import React from 'react';
 import { useState,useEffect } from 'react';
 import { BrowserRouter,Routes  } from 'react-router-dom';
 import { Route } from 'react-router-dom';
-import Saqlanganlar from './Saqlanganlar/Saqlanganlar';
-import Home from './Home/Home';
-import Katalogs from './Katalog/Katalogs';
-import Gear from './Animations/Gear';
-import Car from './Animations/Car';
 import CardPage from './CardPage/CardPage';
 import axios from 'axios';
 import Login from './Authentication/Login';
@@ -18,6 +13,9 @@ import Cart from './Saqlanganlar/Cart';
 import Navbar from './Navbar/Navbar';
 import Katalog from './Katalog/Katalog';
 import Footer from './Footer/Footer';
+import Instructions from './Instructions/Instructions';
+import ChangeWheel from './Instructions/ChangeWheel';
+import ChangeBattery from './Instructions/ChangeBattery';
 function App() {
   const [show, setShow] = useState(true);
   const [cart, setCart] = useState([]);
@@ -59,6 +57,9 @@ function App() {
             <Route element= {<Login/>} path="/login" /> 
             <Route element= {<Signup/>} path="/signup" /> 
             <Route element= {<AboutUs/>} path="/haqida" /> 
+            <Route element= {<Instructions/>} path="/instructions" /> 
+            <Route element= {<ChangeWheel/>} path="/instructions/changewheel" /> 
+            <Route element= {<ChangeBattery/>} path="/instructions/changebattery" /> 
             <Route element= {<CardPage handleClick={handleClick}/>} path="/katalog/:id" /> 
        </Routes>
        <Footer/>

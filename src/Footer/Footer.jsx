@@ -4,6 +4,7 @@ import { SiGmail } from "react-icons/si";
 import { BsTelegram } from "react-icons/bs";
 import { IoIosCall } from "react-icons/io";
 import YZ from './YZ.png'
+import { Link } from "react-router-dom";
 const Footer = () => {
     return(
         <div className="bg">
@@ -28,7 +29,7 @@ const Footer = () => {
                      <p>Black Clover Jamoasi</p>
                      <div className="contacts">
                         <BsTelegram id="icons"/>
-                        <p>@bluelock2007</p>
+                        <Link to={`https://t.me/uz_mashina_bot`}><p>uz_mashina_bot</p></Link>
                      </div>
                      <div className="contacts">
                         <IoIosCall id="icons"/>

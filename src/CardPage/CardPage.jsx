@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Card from './CardD';
 import axios from 'axios';
 import { useState,useEffect } from 'react';
+import Loading from '../Animations/Loading';
 const CardPage = ({handleClick}) => {
   const { id } = useParams();
   console.log(id)
@@ -28,7 +29,7 @@ const CardPage = ({handleClick}) => {
       {card ? (
         <Card item={card} hands={handleClick}/>
       ) : (
-        <p>Loading...</p>
+        <Loading/>
       )}
     </div>
 

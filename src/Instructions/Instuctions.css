@@ -1,0 +1,109 @@
+.Instuctions{
+    width: 100%;
+}
+.Instuctions p{
+    width: 600px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: Gilroy;
+    color: rgb(64, 64, 64);
+}
+.InstructionsImg img{
+    border-radius: 20px 0 0 20px;
+    width: 820px;
+}
+.InstructionsImg2 img{
+    margin-top: 90px;
+    border-radius: 0 20px 20px 0;
+
+}
+.InstuctionsDiv{
+    margin-left: 80px;
+}
+.InstuctionsDiv h1{
+    font-size: 50px;
+    font-family: Gilroy;
+}
+.InstuctionsDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.InstuctionsDiv i{
+    color: rgb(0, 136, 255);
+    font-size: 30px;
+    font-family: Gilroy;
+}
+.InstuctionsDiv i span{
+    color: rgb(0, 136, 255);
+    font-size: 24px;
+}
+.InstructionsImg{
+    margin-top: 80px;
+    display: flex;
+    justify-content: right;
+}
+
+.PPPP{
+    
+    display: flex;
+    justify-content: left;
+    text-align: left;
+}
+
+.PPP{
+    
+    text-align: right;
+
+}
+
+.ChangeWheel{
+    
+}
+.ChangeWheel h2{
+    text-align: center;
+}
+.ChangeWheel p{
+    width: 1200px;
+    margin: 0 auto;
+}
+.ChangeWheel li{
+    /* list-style-type: circle; */
+    margin-left: 80px;
+    list-style: disc;
+}
+.Shinani h2{
+    font-size: 50px;
+}
+.Shinani h1{
+    font-size: 30px;
+    text-align: center;
+}
+.Shinani p{
+    font-family: Gilroy;
+}
+.Battery{
+    
+}
+.Battery p{
+    width: 1300px;
+    margin: 0 auto;
+}
+.Battery h1{
+    text-align: center;
+    font-size: 40px;
+}
+.Battery p span{
+    font-weight: 600;
+}
+.Battery ul{
+    margin-top: 20px;
+}
+.Battery li{
+    /* list-style-type: circle; */
+    margin-left: 400px;
+    list-style: disc;
+    font-size: 24px;
+}
+iframe{
+    margin:0 auto;
+}

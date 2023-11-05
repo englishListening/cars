@@ -106,6 +106,7 @@ function chooseCategory(type) {
 </select>
 </div>
 </div>
+            
               <Card props={data} handleClick={handleClick}/>
           </div>
         </div>
